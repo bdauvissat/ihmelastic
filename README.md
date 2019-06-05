@@ -12,3 +12,5 @@ https://yarnpkg.com/lang/en/docs/install/#windows-stable
 Clone the repository  
 Run `yarn`  
 Run `yarn link`  
+
+When package.json is updated, run npm install in the root folder for your project to install new dependancies.
