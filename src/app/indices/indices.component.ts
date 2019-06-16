@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Client} from "elasticsearch";
+import {Client} from "elasticsearch-browser";
 
 declare var require: any;
 
@@ -20,17 +20,10 @@ export class IndicesComponent implements OnInit {
       host: 'http://localhost:9200',
       log: 'trace'
     });
-
     this.client.ping({
-      requestTimeout: 30000,
-    }, function (error) {
-      if (error) {
-        this.message = 'elasticsearch cluster is down!';
-      } else {
-        this.message = 'All is well';
-      }
+      requestTimeout: Infinity,
+      body: 'hello JavaSampleApproach!'
     });
-
   }
 
 }

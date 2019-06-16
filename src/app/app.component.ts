@@ -6,11 +6,7 @@ import { IndicesComponent } from './indices/indices.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-@NgModule({
-  declarations: [
-    IndicesComponent
-  ]
-})
+
 export class AppComponent {
   title = 'ihmelastic';
 }

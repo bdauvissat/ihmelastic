@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IndicesComponent } from './indices/indices.component';
+import {Indices} from "elasticsearch";
+import {IndicesComponent} from "./indices/indices.component";
 
 @NgModule({
   declarations: [
